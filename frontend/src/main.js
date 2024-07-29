@@ -13,7 +13,7 @@ Vue.use(VueSweetalert2)
 Vue.config.productionTip = false
 store.commit('initializeStore');
 
-axios.defaults.baseURL = 'http://192.168.1.6:3000';
+axios.defaults.baseURL = 'http://localhost:3000';
 
 // Configuración del manejador de errores global
 Vue.config.errorHandler = function (err, info) {
