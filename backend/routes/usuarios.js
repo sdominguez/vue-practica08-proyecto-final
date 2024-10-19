@@ -8,12 +8,14 @@ const {
     delete_usuario
      } = require('../controllers/usuarios');
 
+     const {validarJWT} = require('../helpers/validar-jwt');
+
 const router = Router();
 
 router.get('/get_all', get_all_usuarios); 
 router.get('/get_by_id_body', get_usuario_by_id_body); 
 router.post('/save', save_usuario);
 router.put('/update/:id', update_usuario);
-router.delete('/delete/:id', delete_usuario);
+router.delete('/delete/:id',[validarJWT], delete_usuario);
 
 module.exports = router;

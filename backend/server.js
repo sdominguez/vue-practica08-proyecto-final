@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser'); 
 const cookieParser = require('cookie-parser');
 const cors = require('cors'); 
-const { SECRET_KEY } = require('./helpers/config');
 
 /**
  * Definición de las opciones de Cors

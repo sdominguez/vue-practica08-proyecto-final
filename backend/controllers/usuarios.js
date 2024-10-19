@@ -25,27 +25,6 @@ const get_all_usuarios = (async(req, res = response) =>{
 });
 
 /**
- * Ejemplo de un endpoint en el que sólo se accede si viene el token generado en login
- * este ejemplo se realizó en clase pero no es parte de la aplicación final
- * @param {*} req 
- * @param {*} res 
- * @returns 
- */
-const ruta_protegida = (async(req, res = response)=>{
-    const token = req.cookies.token;
-    if(!token){
-        return res.status(401).json({mensaje: 'Token no proporcionado'});
-    }
-    try{
-        const decoded = jwt.verify(token, SECRET_KEY);
-        res.json({mensaje:'Datos protegidos', user: decoded});
-    }catch(error){
-        return res.status(401).json({message: 'Token Inválido'});
-    }
-
-});
-
-/**
  * Registra un usuario en base de datos
  * @param {*} req 
  * @param {*} res 
@@ -158,7 +137,6 @@ const delete_usuario = (async(req, res = response) => {
 module.exports = {
     get_all_usuarios,
     save_usuario,
-    ruta_protegida,
     get_usuario_by_id_body,
     update_usuario_body,
     update_usuario,
