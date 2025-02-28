@@ -1,4 +1,3 @@
-
 <template>
     <div>
     <hello-world />
@@ -7,14 +6,14 @@
   
   
   <script>
-  import HelloWorld from '../components/HelloWorld'
+  import HelloWorld from '../componenssts/HelloWorld'
   
   export default {
     name: 'HomeView',
   
     data() {
       return {
-        //=======sample 2
+        
       };
     },
   

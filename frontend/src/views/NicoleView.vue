@@ -1,4 +1,3 @@
-
 <template>
     <div>
     <hello-world />
@@ -10,11 +9,11 @@
   import HelloWorld from '../components/HelloWorld'
   
   export default {
-    name: 'HomeView',
+    name: 'NicoleView',
   
     data() {
       return {
-        //=======sample 2
+        
       };
     },
   

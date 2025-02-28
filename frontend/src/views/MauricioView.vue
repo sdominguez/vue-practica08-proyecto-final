@@ -1,4 +1,3 @@
-
 <template>
     <div>
     <hello-world />
@@ -14,7 +13,7 @@
   
     data() {
       return {
-        //=======sample 2
+        
       };
     },
   
@@ -30,7 +29,7 @@
       this.nombre_usuario = sessionStorage.getItem('usuario');
       console.log(this.nombre_usuario);
     },
-    
+     
   }
   </script>
   

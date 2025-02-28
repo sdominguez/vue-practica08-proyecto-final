@@ -1,4 +1,3 @@
-
 <template>
     <div>
     <hello-world />
@@ -14,7 +13,7 @@
   
     data() {
       return {
-        //=======sample 2
+        
       };
     },
   
@@ -33,4 +32,5 @@
     
   }
   </script>
+  
   
