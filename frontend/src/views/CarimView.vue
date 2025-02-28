@@ -27,7 +27,13 @@ export default {
 
   components: {
     HelloWorld,
+
+
+
   },
+
+
+
   beforeCreate() {
     if (!sessionStorage.getItem('usuario')) {
       this.$router.push('/');
@@ -40,6 +46,10 @@ export default {
     this.nombre_usuario = sessionStorage.getItem('usuario');
     console.log(this.nombre_usuario);
   },
+
+
+
+  
   
 }
 </script>
